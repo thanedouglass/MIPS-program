@@ -30,3 +30,9 @@ main:
     li $v0, 11
     li $a0, ' '
     syscall
+
+    sequence_loop:
+        # Print next Fibonacci number
+        li $v0, 1
+        move $a0, $t2
+        syscall
