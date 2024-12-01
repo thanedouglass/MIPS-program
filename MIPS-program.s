@@ -50,4 +50,7 @@ main:
         move $t1, $t2      # Previous number becomes current number
         move $t2, $t4      # Current number becomes next number
         blt $t3, $t0, sequence_loop
+        
+    j exit
 
+    error_handler:
