@@ -58,3 +58,7 @@ main:
         la $a0, error
         syscall
         j input_loop
+
+    exit:
+        li $v0, 10
+        syscall
