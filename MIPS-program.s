@@ -41,6 +41,8 @@ main:
         li $v0, 11
         li $a0, ' '
         syscall
-        
+
         # Increment counter
         addi $t3, $t3, 1
+
+        add $t4, $t1, $t2  # Next number = previous two numbers added
