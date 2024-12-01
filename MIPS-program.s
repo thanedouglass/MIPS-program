@@ -41,3 +41,6 @@ main:
         li $v0, 11
         li $a0, ' '
         syscall
+        
+        # Increment counter
+        addi $t3, $t3, 1
