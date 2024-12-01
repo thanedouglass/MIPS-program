@@ -21,3 +21,8 @@ main:
     li $t1, 0           # First Fibonacci number (F0)
     li $t2, 1           # Second Fibonacci number (F1)
     li $t3, 0           # Counter for number of terms printed
+
+    # Print F0 (0)
+    li $v0, 1
+    move $a0, $t1
+    syscall
