@@ -54,3 +54,7 @@ main:
     j exit
 
     error_handler:
+        li $v0, 4
+        la $a0, error
+        syscall
+        j input_loop
