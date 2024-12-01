@@ -46,3 +46,8 @@ main:
         addi $t3, $t3, 1
 
         add $t4, $t1, $t2  # Next number = previous two numbers added
+
+        move $t1, $t2      # Previous number becomes current number
+        move $t2, $t4      # Current number becomes next number
+        blt $t3, $t0, sequence_loop
+
