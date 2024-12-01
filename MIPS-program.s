@@ -17,3 +17,7 @@ main:
         move $t0, $v0       # Store input in $t0
         blt $t0, 25, error_handler   # Branch if input < 25
         blez $t0, error_handler      # Branch if input <= 0
+
+    li $t1, 0           # First Fibonacci number (F0)
+    li $t2, 1           # Second Fibonacci number (F1)
+    li $t3, 0           # Counter for number of terms printed
